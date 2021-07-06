@@ -64,7 +64,8 @@
     <div class="shopping_cart">
       <div v-if="namePlatesShow.length != 0" class="cart_top">
         <h3>Totale: @{{sum}} &euro;</h3>
-        <img src="{{asset('images/shopping-cart.png')}}" alt="">
+        {{-- <img src="{{asset('images/shopping-cart.png')}}" alt=""> --}}
+        <i class="fas fa-shopping-cart"></i>
       </div>
       {{-- <h3>Carrello</h3> --}}
       <div class="elements_container" v-if="namePlatesShow.length > 0">
