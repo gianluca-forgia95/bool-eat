@@ -12,12 +12,12 @@
 
 .jumbotron_wrapper {
     position: relative;
-    background-image: url('images/banner_4.png');
-    //background-image: url('../../images/jumbotronbg.jpg');
+    //background-image: url('images/banner_4.png');
+    background-image: url('../../images/toktok-rider-bg20mp.png');
     height: 700px;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -226,7 +226,7 @@
     font-family: 'Vollkorn', serif;
     width: 100%;
     position: absolute;
-    top: 42%;
+    top: 7%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -555,14 +555,14 @@
         }
         .genres_content{
             margin: 5px;
+            
 
             .genre-text {
-                width: 100%;
                 border-radius: $border_radius_boxes;
-                background-color: $db_green;
+                background-color: $db_yellow;
                 padding: 2px;
                 &:hover {
-                   background-color: $db_green-light;
+                   background-color: $db_yellow-light;
                 }
 
                 a{
@@ -578,25 +578,26 @@
                    
                    // font-style: italic;
                 }
+                img{
+                    filter: grayscale(60%);
+                    object-fit: cover;
+                    display: block;
+                    max-width: 100px;
+                    height: 90px;
+                    border-radius: $border_radius_boxes;
+                    margin: 0 5px;
+                    cursor: pointer;
+    
+                    &:hover{
+                        filter: grayscale(0%);
+                    }
+                }
 
             }
 
            
 
-            img{
-                filter: grayscale(60%);
-                object-fit: cover;
-                display: block;
-                width: 90px;
-                height: 90px;
-                border-radius: $border_radius_boxes;
-                margin: 0 5px;
-                cursor: pointer;
-
-                &:hover{
-                    filter: grayscale(0%);
-                }
-            }
+          
         } 
     }
 }
