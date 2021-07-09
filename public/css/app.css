@@ -10678,7 +10678,7 @@ body {
   font-family: "Vollkorn", serif;
   width: 100%;
   position: absolute;
-  top: 7%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -10692,30 +10692,30 @@ body {
   font-weight: bold;
   font-size: 40px;
   font-weight: 600;
-  color: #14B8B5;
+  color: #242456;
 }
 @media screen and (max-width: 992px) {
   .jumbotron_content h1 {
-    font-size: 50px;
-  }
-  .jumbotron_content h2 {
-    font-size: 34px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .jumbotron_content h1 {
-    font-size: 40;
+    font-size: 30px;
   }
   .jumbotron_content h2 {
     font-size: 24px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .jumbotron_content h1 {
-    font-size: 28px;
+    font-size: 22px;
   }
   .jumbotron_content h2 {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .jumbotron_content h1 {
+    display: none;
+  }
+  .jumbotron_content h2 {
+    display: none;
   }
 }
 .jumbotron_content input {
@@ -10773,7 +10773,7 @@ body {
   background-color: #E1B03D;
   border: none;
   border-radius: 5px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);
   margin-bottom: 20px;
 }
 .container_card .card_restaurant .button_card_menu a {
@@ -10886,6 +10886,11 @@ body {
   z-index: 200;
   box-shadow: -1px 2px 10px -3px rgba(0, 0, 0, 0.74);
 }
+@media screen and (max-width: 768px) {
+  .jumbotron_bottom {
+    max-heigth: 80px;
+  }
+}
 .jumbotron_bottom h2 {
   font-size: 42px;
   font-weight: bold;
@@ -10893,7 +10898,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .jumbotron_bottom h2 {
-    font-size: 26px;
+    font-size: 18px;
   }
 }
 .jumbotron_bottom input {
@@ -10910,21 +10915,21 @@ body {
 }
 @media screen and (max-width: 768px) {
   .jumbotron_bottom input {
-    width: 200px;
+    width: 100px;
   }
 }
 .jumbotron_bottom button {
   vertical-align: middle;
   height: 40px;
   padding: 0 20px;
-  background-color: #0E7C7B;
+  background-color: #E1B03D;
   border-radius: 0.25rem;
   border: none;
   color: #fff;
   font-weight: bold;
 }
 .jumbotron_bottom button:hover {
-  background: #14B8B5;
+  background: #E9C572;
 }
 
 .wrapper_genres {
@@ -10993,7 +10998,7 @@ body {
 .card_container_2 h2 {
   font-size: 42px;
   font-weight: bold;
-  color: #004466;
+  color: #242456;
 }
 @media screen and (max-width: 768px) {
   .card_container_2 h2 {
@@ -11638,6 +11643,7 @@ padding: 30px;
   padding: 0 20px;
   background-image: url("../../images/good_food-wallpaper-2880x1620.jpg");
   background-position: right;
+  background-repeat: no-repeat;
   padding: 40px 0;
 }
 @media (min-width: 700px) {
@@ -11717,12 +11723,12 @@ padding: 30px;
   position: absolute;
   bottom: 0;
   right: 10px;
-  background-color: #0E7C7B;
+  background-color: #E1B03D;
   padding: 1.5rem;
   border-radius: 0.25rem;
 }
 #cart .menu .wrapper_plate .restaurant_plate .add-to-cart .icon-cart:hover {
-  background-color: #14B8B5;
+  background-color: #E9C572;
 }
 #cart .menu .wrapper_plate .restaurant_plate .add-to-cart .icon-cart i {
   font-size: 30px;
@@ -11962,7 +11968,7 @@ padding: 30px;
 }
 #cart .shopping_cart .checkout button {
   text-align: center;
-  background-color: #14B8B5;
+  background-color: #E1B03D;
   width: 300px;
 }
 #cart .shopping_cart .checkout button a {

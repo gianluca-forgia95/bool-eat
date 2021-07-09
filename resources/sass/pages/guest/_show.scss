@@ -6,6 +6,7 @@
   padding: 0 20px;
   background-image: url('../../images/good_food-wallpaper-2880x1620.jpg');
   background-position: right;
+  background-repeat: no-repeat;
   padding: 40px 0;
 
   @include small_medium {
@@ -93,12 +94,12 @@
             position: absolute;
             bottom: 0;
             right: 10px;
-            background-color: $db_green ;
+            background-color: $db_yellow ;
             padding: $padding_boxes;
             border-radius: $border_radius_boxes;
 
             &:hover {
-              background-color: $db_green-light;
+              background-color: $db_yellow-light;
             }
 
             i {
@@ -354,7 +355,7 @@
 
       button{
         text-align: center;
-        background-color: $db_green-light;
+        background-color: $db_yellow;
         width: 300px;
 
         a{

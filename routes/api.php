@@ -28,16 +28,16 @@ Route::namespace('Api')->group(function () {
     Route::get('/search', 'RestaurantController@userWithGenres');
 
     Route::get('/genres', 'RestaurantController@genres');
-
+    //Api che filtra per categoria di ristorante
     Route::get('/filterapi/{genre}', 'RestaurantController@filteredApi');
 
-    
+    //Api ricerca per nome di ristorante
     Route::get('/names' , 'RestaurantController@searchRestaurant');
 
     Route::get('/vegan' , 'RestaurantController@veganPlates');
 
     //Route::get('/payment/done' , 'PaymentController@apiPayment');
-
+    //Api che mostra le statistiche degli ordini per utente
     Route::get('/user/orders', 'RestaurantController@orders');
 
 });

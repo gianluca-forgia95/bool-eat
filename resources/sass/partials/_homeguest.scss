@@ -226,7 +226,7 @@
     font-family: 'Vollkorn', serif;
     width: 100%;
     position: absolute;
-    top: 7%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -242,23 +242,13 @@
         font-weight: bold;
         font-size: 40px;
         font-weight: 600;
-        color: $db_green-light;
+        color: $db_blue;
     }
 
     
     @media screen and( max-width: 992px){
         h1{
-            font-size: 50px;
-        }
-
-        h2{
-            font-size: 34px;
-        }
-    }
-
-    @media screen and( max-width: 768px){
-        h1{
-            font-size: 40;
+            font-size: 30px;
         }
 
         h2{
@@ -266,13 +256,23 @@
         }
     }
 
-    @media screen and( max-width: 500px){
+    @media screen and( max-width: 768px){
         h1{
-            font-size: 28px;
+            font-size: 22px;
         }
 
         h2{
             font-size: 20px;
+        }
+    }
+
+    @media screen and( max-width: 500px){
+        h1{
+           display: none;
+        }
+
+        h2{
+            display: none;
         }
     }
 
@@ -341,7 +341,7 @@
             background-color: $db_yellow;
             border: none;
             border-radius: 5px;
-            box-shadow: 0 9px #999;
+            box-shadow: 0 10px 40px 0 rgb(62 57 107 / 7%), 0 2px 9px 0 rgb(62 57 107 / 6%);
             margin-bottom: 20px;
 
             a{
@@ -473,6 +473,10 @@
     z-index: 200;
     -webkit-box-shadow: -1px 2px 10px -3px rgba(0,0,0,0.74); 
      box-shadow: -1px 2px 10px -3px rgba(0,0,0,0.74);
+     @media screen and( max-width: 768px){
+        max-heigth: 80px;
+        
+    }
 
 
     h2{
@@ -481,7 +485,7 @@
         color: $db_blue;
 
         @media screen and( max-width: 768px){
-            font-size: 26px;
+            font-size: 18px;
         }
     }
 
@@ -499,7 +503,7 @@
         }
 
         @media screen and( max-width: 768px){
-            width: 200px;
+            width: 100px;
         }
     }
 
@@ -507,16 +511,17 @@
         vertical-align: middle;
         height: 40px;
         padding: 0 20px;
-        background-color: $db_green;
+        background-color: $db_yellow;
         border-radius: $border_radius_boxes;
         border:none;
         color:#fff;
         font-weight: bold;
 
         &:hover{
-            background: $db_green-light;
+            background: $db_yellow-light;
         }
     }
+  
 }
 
 .wrapper_genres{
@@ -608,7 +613,7 @@
         //font-family: 'Vollkorn', serif;
         font-size: 42px;
         font-weight: bold;
-        color: #004466;
+        color: $db_blue;
 
         @media screen and( max-width: 768px){
             font-size: 26px;

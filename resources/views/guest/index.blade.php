@@ -64,7 +64,7 @@
           <img v-bind:src="user.logo" alt="">
           <h4>@{{user.restaurant_name}}</h4>
         <div class="overlay">
-          <p class="text card_address mt-2">@{{user.address}}</p>
+          {{-- <p class="text card_address mt-2">@{{user.address}}</p> --}}
           <button class="btn_menu_overlay button_card_menu"><a :href="'http://localhost:8000/show/'+ user.id">Visualizza menù</a></button>
         </div>
       </div>
@@ -75,7 +75,7 @@
         <img v-bind:src="restaurant.logo" alt="">
         <h4>@{{restaurant.restaurant_name}}</h4>
         <div class="overlay">
-          <p class="text card_address mt-2">@{{restaurant.address}}</p>
+          {{-- <p class="text card_address mt-2">@{{restaurant.address}}</p> --}}
           <button class="btn_menu_overlay button_card_menu"><a :href="'http://localhost:8000/show/'+ restaurant.id">Visualizza menù</a></button>
         </div>
       </div>
@@ -96,7 +96,7 @@
                 <img src="{{$user->logo}}" alt="">
                 <h4>{{$user->restaurant_name}}</h4> 
                 <div class="overlay">
-                  <p class="text card_address mt-2">{{$user->address}}</p>
+                  {{-- <p class="text card_address mt-2">{{$user->address}}</p> --}}
                   <a v-on:click="message({{ json_encode($user->id) }})" href="{{ route('guest.show' , ['user' => $user->id])}}"><button class="btn_menu_overlay button_card_menu">Vai al Menù</button></a>
                 </div>
             </div>
