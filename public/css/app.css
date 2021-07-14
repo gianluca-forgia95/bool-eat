@@ -11645,6 +11645,7 @@ padding: 30px;
   background-image: url("../../images/good_food-wallpaper-2880x1620.jpg");
   background-position: right;
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 40px 0;
 }
 @media (min-width: 700px) {
@@ -11700,6 +11701,7 @@ padding: 30px;
 }
 #cart .menu .wrapper_plate .restaurant_plate .info-plate span {
   font-weight: bold;
+  color: #E1B03D;
 }
 #cart .menu .wrapper_plate .restaurant_plate .info-plate h3 {
   font-size: 35px;
